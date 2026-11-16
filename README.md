@@ -19,4 +19,4 @@ cargo build --workspace --all-targets
 .\tests\bootstrap_contract.ps1
 ```
 
-The current workspace is a compile-only skeleton. Window management behavior is added in the approved vertical slices; no window is controlled by this baseline.
+The first vertical slice provides read-only diagnostics: `cargo run -p wmctl -- dump` prints a JSON snapshot of top-level windows. The daemon also emits a one-shot JSON snapshot. Neither command moves, focuses, hides, or otherwise controls windows.

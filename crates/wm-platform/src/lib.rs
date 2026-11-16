@@ -1,1 +1,4 @@
-//! Windows platform adapter for WinWM. Platform behavior is added in later slices.
+//! Read-only Windows observation adapters. Mutating window controls are added in later slices.
+
+pub mod snapshot;
+pub use snapshot::{SnapshotError, enumerate_windows};
